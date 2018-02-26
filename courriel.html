@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="stylesheet" href="main.css" type="text/css">
+    <link rel="stylesheet" href="form.css" type="text/css">
+    <script src="monScript.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>Courriel</header>
+      <div id="main">
+        <nav>
+          <ul>
+            <li> <a onclick="afficherAcceuil()">Acceuil</a></li>
+            <li> <a onclick="afficherMessages()">Liste de messages</a></li>
+            <li> <a onclick="afficherNouveau()">Nouveau message</a></li>
+            <li> <a onclick="afficherAdresses()">Carnet d'adresse</a></li>
+          </ul>
+        </nav>
+        <section id="acceuil">
+          <h1>Interface web pour un système de messagerie (courriel)</h1>
+          <p><code>Courriel</code> est un système de messagerie pair-à-pair, c.-à-d., sans serveur centrale.</p>
+          <p>Le projet <code>courriel</code> est séparé en deux parties:</p>
+          <ol>
+            <li> Projet 1: Interface graphique pour le courriel </li>  (code en html/css/js à exécuter par un navigateur).
+            <li> Projet 2: Un mini-serveur permettant le partage (distribution) </li>  des courriels (messages) entre plusieurs utilisateurs.
+          </ol>
+          <p>L'interface WEB devrait pouvoir:</p>
+          <ol>
+            <li>Visualiser la liste de messages</li>
+            <li>Composer un nouveau message.</li>
+            <li>Visualiser et rechercher le carnet d'adresse</li>
+          </ol>
+        </section>
+        <section id="messages">got nothing</section>
+        <section id="nouveau">
+          <div id="form">
+            <fieldset>
+              <legend>Envoi du message</legend>
+              <div id="finput"><span id="first">Destinataire :</span>
+                <input type="text" id="dest">
+              </div>
+              <div id="sinput"><span id="second">Message :</span>
+                <textarea id="body" rows="15"></textarea>
+              </div>
+              <div id="tinput"><span id="third"></span>
+                <input type="button" onclick="toto()" value="Envoyer">
+              </div>
+            </fieldset>
+          </div>
+        </section>
+        <section id="contacts">
+          <h2>Liste de contacts</h2>
+          <ul id="listeContact">
+            <li>johndoe</li>
+            <li>toto</li>
+            <li>jane</li>
+          </ul>
+          <fieldset>
+            <legend>Ajout d'un contact</legend>
+            <div id="flexform"><span id="label">Pseudonyme du contact :</span>
+              <div id="pseudoform">
+                <input type="text" id="pseudo">
+                <input type="button" onclick="ajouterContact()" value="Ajouter">
+              </div>
+            </div>
+          </fieldset>
+        </section>
+      </div>
+      <footer>Copyright © 2018 zenAndroid. All Rights Reserved.</footer>
+    </div>
+  </body>
+</html>

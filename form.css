@@ -1,0 +1,29 @@
+#form{
+    background     : DarkCyan;
+    padding        : .5rem;
+    display        : flex;
+    flex-direction : column;
+}
+#finput,
+#tinput,
+#sinput {
+    display : flex;
+    padding : 5px;
+}
+#first,
+#third,
+#second {
+    flex: 1;
+}
+#finput input,
+#sinput textarea {
+    flex: 5;
+}
+#tinput input{
+    flex: 1;
+}
+@media (max-width:380px){
+    #finput,#sinput{
+        flex-direction: column;
+    }
+}

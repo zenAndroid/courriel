@@ -1,0 +1,83 @@
+#acceuil{
+    display: block;
+}
+#nouveau{
+    display:none;
+}
+#messages{
+    display:none;
+}
+#contacts{
+    display:none;
+}
+.container{                     /* The container of ALL the elements */
+    display        : flex;
+    flex-direction : column;
+    height         : 96vh;
+}
+
+#main{                          /* The container of the navigation and the main content, i think */
+    display   : flex;
+    flex-grow : 1 ;
+}
+html{
+    height : 95%;
+    color  : #BDB891;
+}
+
+header, footer{
+    background : #536831;
+    padding    : .5rem;
+    text-align : center;
+    font-size  : 2rem;
+}
+
+body{
+    background : black;
+}
+
+nav{
+    flex       : 1;
+    background : #888888;
+    padding    : 1rem;
+    text-align : center;
+}
+
+section{
+    flex-grow  : 1;
+    flex       : 9;
+    background : #233B47;
+    padding    : 1rem;
+    overflow   : auto;
+}
+
+nav ul{
+    list-style-type : none;
+    padding         : 0;
+    background      : gold;
+}
+
+nav li a{
+    display         : block;
+    color           : #000;
+    text-decoration : none;
+    padding         : 8px 16px;
+    border          : 1px solid black;
+}
+
+nav li a:hover{
+    background : #588;
+    color      : white;
+}
+
+@media only screen and (max-width:450px){
+    #main{
+        flex-direction: column;
+    }
+    footer{
+        font-size: .75rem;
+    }
+    nav {
+        font-size: .5em;
+    }
+}
