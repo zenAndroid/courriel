@@ -1,14 +1,23 @@
+@font-face{
+    font-family: 'Hermit';
+    src : url('Hermit-medium.otf');
+}
 #acceuil{
     display: block;
+    font-family: 'Hermit';
+    line-height: 1.5em;
 }
 #nouveau{
     display:none;
+    font-family: 'Hermit';
 }
 #messages{
     display:none;
+    font-family: 'Hermit';
 }
 #contacts{
     display:none;
+    font-family: 'Hermit';
 }
 .container{                     /* The container of ALL the elements */
     display        : flex;
@@ -30,6 +39,7 @@ header, footer{
     padding    : .5rem;
     text-align : center;
     font-size  : 2rem;
+    font-family: 'Hermit';
 }
 
 body{
@@ -80,4 +90,14 @@ nav li a:hover{
     nav {
         font-size: .5em;
     }
+}
+table{
+    width: 100%;
+}
+table,td,th{
+    border: 1px solid;
+    border-collapse: collapse;
+}
+td,th{
+    padding: 0.5em;
 }

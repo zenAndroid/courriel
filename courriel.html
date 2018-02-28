@@ -25,8 +25,8 @@
           <p><code>Courriel</code> est un système de messagerie pair-à-pair, c.-à-d., sans serveur centrale.</p>
           <p>Le projet <code>courriel</code> est séparé en deux parties:</p>
           <ol>
-            <li> Projet 1: Interface graphique pour le courriel </li>  (code en html/css/js à exécuter par un navigateur).
-            <li> Projet 2: Un mini-serveur permettant le partage (distribution) </li>  des courriels (messages) entre plusieurs utilisateurs.
+            <li> Projet 1: Interface graphique pour le courriel (code en html/css/js à exécuter par un navigateur).</li>
+            <li> Projet 2: Un mini-serveur permettant le partage (distribution) des courriels (messages) entre plusieurs utilisateurs.</li>
           </ol>
           <p>L'interface WEB devrait pouvoir:</p>
           <ol>
@@ -35,7 +35,33 @@
             <li>Visualiser et rechercher le carnet d'adresse</li>
           </ol>
         </section>
-        <section id="messages">got nothing</section>
+        <section id="messages">
+          <input type="button" onclick="ajouterMessage()" value="et">
+          <table id="tableDeMessages">
+            <tr>
+              <th>Auteur</th>
+              <th>Contenu du message</th>
+            </tr>
+            <tr>
+              <td>Amine</td>
+              <td>
+                Ceci est un test.<br/>Ceci est un test..<br/>
+                Ceci est un test.
+              </td>
+            </tr>
+            <tr>
+              <td>Frakzak</td>
+              <td>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id est laborum.
+              </td>
+            </tr>
+          </table>
+        </section>
         <section id="nouveau">
           <div id="form">
             <fieldset>
