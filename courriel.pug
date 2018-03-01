@@ -34,7 +34,20 @@ html
                         li Composer un nouveau message.
                         li Visualiser et rechercher le carnet d'adresse
                 section#messages
-                    input(type="button",onclick="ajouterMessage()",value="et")
+                    div#form
+                        fieldset
+                            legend Envoi du message (Cet element est temporaire est sera supprimé
+                                | dans le produit fini, il est là juste pour tester la fonctionalité
+                                | javascript)
+                            div#forminput
+                                span#first Auteur :
+                                input(type="text",id="auteur")
+                            div#forminput
+                                span#second Message :
+                                textarea(id="messages_body",rows="15")
+                            div#forminput
+                                span#third
+                                input(type="button",onclick="ajouterMessage()",value="Envoyer",id="submit")
                     table#tableDeMessages
                         tr
                             th Auteur
@@ -57,15 +70,15 @@ html
                     div#form
                         fieldset
                             legend Envoi du message
-                            div#finput
+                            div#forminput
                                 span#first Destinataire :
                                 input(type="text",id="dest")
-                            div#sinput
+                            div#forminput
                                 span#second Message :
                                 textarea(id="body",rows="15")
-                            div#tinput
+                            div#forminput
                                 span#third
-                                input(type="button",onclick="toto()",value="Envoyer")
+                                input(id="submit",type="button",onclick="envoyerMessage()",value="Envoyer")
                 section#contacts
                     h2 Liste de contacts
                     ul#listeContact

@@ -36,7 +36,23 @@
           </ol>
         </section>
         <section id="messages">
-          <input type="button" onclick="ajouterMessage()" value="et">
+          <div id="form">
+            <fieldset>
+              <legend>
+                Envoi du message (Cet element est temporaire est sera supprimédans le produit fini, il est là juste pour tester la fonctionalité
+                javascript)
+              </legend>
+              <div id="forminput"><span id="first">Auteur :</span>
+                <input type="text" id="auteur">
+              </div>
+              <div id="forminput"><span id="second">Message :</span>
+                <textarea id="messages_body" rows="15"></textarea>
+              </div>
+              <div id="forminput"><span id="third"></span>
+                <input type="button" onclick="ajouterMessage()" value="Envoyer" id="submit">
+              </div>
+            </fieldset>
+          </div>
           <table id="tableDeMessages">
             <tr>
               <th>Auteur</th>
@@ -66,14 +82,14 @@
           <div id="form">
             <fieldset>
               <legend>Envoi du message</legend>
-              <div id="finput"><span id="first">Destinataire :</span>
+              <div id="forminput"><span id="first">Destinataire :</span>
                 <input type="text" id="dest">
               </div>
-              <div id="sinput"><span id="second">Message :</span>
+              <div id="forminput"><span id="second">Message :</span>
                 <textarea id="body" rows="15"></textarea>
               </div>
-              <div id="tinput"><span id="third"></span>
-                <input type="button" onclick="toto()" value="Envoyer">
+              <div id="forminput"><span id="third"></span>
+                <input id="submit" type="button" onclick="envoyerMessage()" value="Envoyer">
               </div>
             </fieldset>
           </div>

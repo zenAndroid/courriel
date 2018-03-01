@@ -40,7 +40,7 @@ function ajouterContact(){
     }
 }
 
-function toto() {
+function envoyerMessage() {
      var destinataire = document.getElementById("dest").value;
      var message = document.getElementById("body").value;
      var Message = "";
@@ -60,11 +60,18 @@ function toto() {
 
 function ajouterMessage(){
     var table              = document.getElementById("tableDeMessages");
-    var row                = table.insertRow(1);
 
-    var auteur             = row.insertCell(0);
-    var message            = row.insertCell(1);
-
-    auteur.innerHTML       = "FOO";
-    message.innerHTML      = "BAR";
+    var auteur_string = document.getElementById("auteur").value;
+    var message_body = document.getElementById("messages_body").value;
+    if (auteur_string != "" && message_body != "") {
+        var row                = table.insertRow(1);
+        var auteur             = row.insertCell(0);
+        var message            = row.insertCell(1);
+        auteur.innerText       = auteur_string;
+        message.innerText      = message_body;
+        document.getElementById("auteur").value="";
+        document.getElementById("messages_body").value="";
+    } else {
+        alert("Veuiller remplir tout les champs !");
+    }
 }

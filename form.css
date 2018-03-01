@@ -1,12 +1,11 @@
 #form{
+    margin-bottom: .5rem;
     background     : DarkCyan;
     padding        : .5rem;
     display        : flex;
     flex-direction : column;
 }
-#finput,
-#tinput,
-#sinput {
+#forminput{
     display : flex;
     padding : 5px;
 }
@@ -15,11 +14,11 @@
 #second {
     flex: 1;
 }
-#finput input,
-#sinput textarea {
+#forminput input,
+#forminput textarea {
     flex: 5;
 }
-#tinput input{
+#submit{
     flex: 1;
 }
 @media (max-width:380px){
