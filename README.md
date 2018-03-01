@@ -26,8 +26,7 @@ Chaque groupe (de 2 à 4 personnes) devrait produire:
 - [x] Css
 - [x] Flexbox
 - [x] Kinda responsive using css media queries
-- [ ] JavaScript temporaire pour afficher liste de message.
+- [x] JavaScript temporaire pour afficher liste de message.
 - [x] JavaScript temporaire pour composer un nouveau message.
 - [x] JavaScript temporaire pour ajouter un contact.
 - [ ] Ajout d'un bon background (pas critique).
-- [ ] Implémentation d'icônes fontawesome.
