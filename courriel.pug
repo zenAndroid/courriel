@@ -34,6 +34,7 @@ html
                         li Composer un nouveau message.
                         li Visualiser et rechercher le carnet d'adresse
                 section#messages
+                    h1 Liste de messages
                     div#form
                         fieldset
                             legend Envoi du message (Cet element est temporaire est sera supprimé
@@ -44,7 +45,7 @@ html
                                 input(type="text",id="auteur")
                             div#forminput
                                 span#second Message :
-                                textarea(id="messages_body",rows="15")
+                                textarea(id="messages_body",rows="5")
                             div#forminput
                                 span#third
                                 input(type="button",onclick="ajouterMessage()",value="Envoyer",id="submit")
@@ -67,6 +68,7 @@ html
                                 | sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
                                 | mollit anim id est laborum.
                 section#nouveau
+                    h1 Nouveau message
                     div#form
                         fieldset
                             legend Envoi du message
@@ -80,7 +82,7 @@ html
                                 span#third
                                 input(id="submit",type="button",onclick="envoyerMessage()",value="Envoyer")
                 section#contacts
-                    h2 Liste de contacts
+                    h1 Liste de contacts
                     ul#listeContact
                         li johndoe
                         li toto

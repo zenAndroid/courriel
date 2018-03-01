@@ -1,28 +1,28 @@
 @font-face{
-    font-family: 'Hermit';
-    src : url('Hermit-medium.otf');
+    font-family : 'Hermit';
+    src         : url('Hermit-medium.otf');
 }
 #acceuil{
-    display: block;
-    font-family: 'Hermit';
-    line-height: 1.5em;
+    display     : block;
+    font-family : 'Hermit';
+    line-height : 1.5em;
 }
 #nouveau{
-    display:none;
-    font-family: 'Hermit';
+    display     : none;
+    font-family : 'Hermit';
 }
 #messages{
-    display:none;
-    font-family: 'Hermit';
+    display     : none;
+    font-family : 'Hermit';
 }
 #contacts{
-    display:none;
-    font-family: 'Hermit';
+    display     : none;
+    font-family : 'Hermit';
 }
 .container{                     /* The container of ALL the elements */
     display        : flex;
     flex-direction : column;
-    height         : 96vh;
+    min-height     : 95vh
 }
 
 #main{                          /* The container of the navigation and the main content, i think */
@@ -30,7 +30,6 @@
     flex-grow : 1 ;
 }
 html{
-    height : 95%;
     color  : #BDB891;
 }
 
@@ -80,6 +79,16 @@ nav li a:hover{
     color      : white;
 }
 
+table{
+    width: 100%;
+}
+table,td,th{
+    border: 1px solid;
+    border-collapse: collapse;
+}
+td,th{
+    padding: 0.5em;
+}
 @media only screen and (max-width:450px){
     #main{
         flex-direction: column;
@@ -90,14 +99,4 @@ nav li a:hover{
     nav {
         font-size: .5em;
     }
-}
-table{
-    width: 100%;
-}
-table,td,th{
-    border: 1px solid;
-    border-collapse: collapse;
-}
-td,th{
-    padding: 0.5em;
 }
