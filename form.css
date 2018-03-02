@@ -1,6 +1,7 @@
-#form{
+.formulaire{
+    background-color: #3b224f;
+    background-image: url(https://www.transparenttextures.com/patterns/3px-tile.png);
     margin-bottom: .5rem;
-    background     : DarkCyan;
     padding        : .5rem;
     display        : flex;
     flex-direction : column;
