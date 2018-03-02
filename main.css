@@ -35,7 +35,7 @@ html{
 
 header, footer{
     background-color: #253d00;
-    background-image: url(https://www.transparenttextures.com/patterns/black-linen.png);
+    background-image: url(black-linen.jpg);
     padding    : .5rem;
     text-align : center;
     font-size  : 2rem;
@@ -48,7 +48,7 @@ body{
 
 nav{
     background-color: #170227;
-    background-image: url(https://www.transparenttextures.com/patterns/3px-tile.png);
+    background-image: url(3px-tile.png);
     flex       : 1;
     padding    : 1rem;
     text-align : center;
@@ -57,7 +57,7 @@ nav{
 
 section{
     background-color: #29004f;
-    background-image: url(https://www.transparenttextures.com/patterns/3px-tile.png);
+    background-image: url(3px-tile.png);
     flex-grow  : 1;
     flex       : 9;
     padding    : 1rem;
@@ -68,7 +68,7 @@ nav ul{
     list-style-type : none;
     padding         : 0;
     background-color: #7b0094;
-    background-image: url("https://www.transparenttextures.com/patterns/black-twill.png");
+    background-image: url("black-twill.png");
 }
 
 nav li a{
