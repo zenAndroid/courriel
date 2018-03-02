@@ -29,4 +29,4 @@ Chaque groupe (de 2 à 4 personnes) devrait produire:
 - [x] JavaScript temporaire pour afficher liste de message.
 - [x] JavaScript temporaire pour composer un nouveau message.
 - [x] JavaScript temporaire pour ajouter un contact.
-- [ ] Ajout d'un bon background (pas critique).
+- [x] Ajout d'un bon background (pas critique).
