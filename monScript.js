@@ -49,6 +49,8 @@ function envoyerMessage() {
          if (message != "") {
              var MsgBody = "Message : " + message;
              Message = MsgHeader + '\n' + MsgBody;
+             document.getElementById("dest").value = "";
+             document.getElementById("body").value = "";
              alert(Message);
          } else {
              alert("Veuillez remplir le message");
